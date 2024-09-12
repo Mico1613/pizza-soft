@@ -1,0 +1,13 @@
+@import "~shared/styles/variables.scss";
+
+.wrapper {
+  > div:first-child {
+    width: 304px;
+  }
+
+  @media (max-width: $tablet-dimension) {
+    > div:first-child {
+      width: auto;
+    }
+  }
+}

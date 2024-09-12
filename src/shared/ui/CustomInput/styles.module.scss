@@ -1,0 +1,25 @@
+@import "~shared/styles/variables.scss";
+
+.inputLabel {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 4px;
+
+  > input {
+    outline: 1px solid $grey;
+    padding: 8px;
+    border-radius: 6px;
+
+    &:focus,
+    &:focus-visible {
+      outline-width: 2px;
+      outline-color: #3182ce;
+      box-shadow: 0 0 0 1px #3182ce;
+    }
+  }
+
+  .error {
+    color: $error;
+    font-size: 12px;
+  }
+}

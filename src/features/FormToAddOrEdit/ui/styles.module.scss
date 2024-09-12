@@ -1,0 +1,9 @@
+@import "~shared/styles/variables.scss";
+
+.form {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-columns: minmax(200px, 400px);
+  justify-content: center;
+  gap: 24px;
+}

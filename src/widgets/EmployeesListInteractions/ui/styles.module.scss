@@ -1,0 +1,48 @@
+@import "~shared/styles/variables.scss";
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "filter sorting"
+    "add add";
+  justify-content: space-between;
+  row-gap: 40px;
+  column-gap: 16px;
+
+  @media (max-width: $tablet-dimension) {
+    justify-content: center;
+    grid-template-areas: "filter" "sorting" "add";
+  }
+}
+
+.filters,
+.sorting {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 8px;
+  max-width: var(--tablet-dimension);
+
+  > span:first-child {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+
+.filters {
+  grid-area: filter;
+}
+
+.sorting {
+  grid-area: sorting;
+}
+
+.addEmployee {
+  display: grid;
+  justify-content: center;
+  grid-area: add;
+
+  > button {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
