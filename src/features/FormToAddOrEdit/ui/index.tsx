@@ -47,6 +47,7 @@ export const FormToAddOrEdit = ({ btnText, employee, onSubmit }: Props) => {
             error={fieldState.error?.message}
             label="Номер телефона"
             maxLength={17}
+            mask="{+7} (000) 000-0000"
           />
         )}
       />
@@ -58,6 +59,7 @@ export const FormToAddOrEdit = ({ btnText, employee, onSubmit }: Props) => {
             {...field}
             error={fieldState.error?.message}
             label="Дата рождения"
+            mask="date"
           />
         )}
       />
